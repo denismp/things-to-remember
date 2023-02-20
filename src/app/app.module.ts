@@ -19,6 +19,8 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
+import { ThingsToRememberComponent } from './pages/things-to-remember/things-to-remember.component';
+import { ThingsToRememberContentComponent } from './components/things-to-remember-content/things-to-remember-content.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { environment as env } from '../environments/environment';
     HomeContentComponent,
     LoadingComponent,
     ExternalApiComponent,
-    ErrorComponent
+    ErrorComponent,
+    ThingsToRememberComponent,
+    ThingsToRememberContentComponent
   ],
   imports: [
     BrowserModule,

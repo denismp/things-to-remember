@@ -5,6 +5,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ExternalApiComponent } from './pages/external-api/external-api.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { AuthGuard } from '@auth0/auth0-angular';
+import { ThingsToRememberComponent } from './pages/things-to-remember/things-to-remember.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'things-to-remember',
+    component: ThingsToRememberComponent,
     pathMatch: 'full',
   },
 ];
