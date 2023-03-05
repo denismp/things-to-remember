@@ -21,6 +21,7 @@ import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { ThingsToRememberComponent } from './pages/things-to-remember/things-to-remember.component';
 import { ThingsToRememberContentComponent } from './components/things-to-remember-content/things-to-remember-content.component';
+import { SideNavBarComponent } from './components/side-nav-bar/side-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ThingsToRememberContentComponent } from './components/things-to-remembe
     ExternalApiComponent,
     ErrorComponent,
     ThingsToRememberComponent,
-    ThingsToRememberContentComponent
+    ThingsToRememberContentComponent,
+    SideNavBarComponent
   ],
   imports: [
     BrowserModule,
