@@ -6,6 +6,7 @@ import { ExternalApiComponent } from './pages/external-api/external-api.componen
 import { ErrorComponent } from './pages/error/error.component';
 import { AuthGuard } from '@auth0/auth0-angular';
 import { ThingsToRememberComponent } from './pages/things-to-remember/things-to-remember.component';
+import { SideNavBarComponent } from './components/side-nav-bar/side-nav-bar.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,11 @@ const routes: Routes = [
   {
     path: 'things-to-remember',
     component: ThingsToRememberComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'side-nav-bar',
+    component: SideNavBarComponent,
     pathMatch: 'full',
   },
 ];
